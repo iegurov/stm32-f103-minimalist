@@ -1,0 +1,4 @@
+D:/Workspace/TemplateSTM32F103/build/CMakeFiles/Flash.dir
+D:/Workspace/TemplateSTM32F103/build/CMakeFiles/generate_bin.dir
+D:/Workspace/TemplateSTM32F103/build/CMakeFiles/edit_cache.dir
+D:/Workspace/TemplateSTM32F103/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Workspace/TemplateSTM32F103/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
