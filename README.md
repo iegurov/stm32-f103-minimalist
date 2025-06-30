@@ -24,8 +24,3 @@
 | `make`                 | Сборка проекта                 |
 | `stlink` или `openocd` | Прошивка через SWD            |
 
-Установка (на Ubuntu/Debian):
-
-```bash
-sudo apt update
-sudo apt install gcc-arm-none-eabi make stlink-tools
