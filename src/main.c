@@ -1,6 +1,11 @@
 #include "stm32f1xx.h"
 #include <stdint.h>
-//#include "stmlib.h"
+
+/*
+    Только не пугайтесь этого огромного кода! Он всего лишь моргает диодом)
+    Если серьезно - эта программа написана без использования даже CMSIS, что и делает её такой громадной 
+    Суть - просто просигнализировать об успешной прошивке
+*/
 
 static void enable_port_clock(void);
 static void configure_pin(void);
@@ -26,7 +31,6 @@ int main(void)
 
 static void enable_port_clock(void)
 {
-    // enable I/O port C clock
     uint32_t rcc_base_address = 0x40021000;
     uint32_t rcc_apb2enr_address = rcc_base_address + 0x18;
     uint32_t rcc_apb2enr_iopcen = 1 << 4;
@@ -39,7 +43,6 @@ static void enable_port_clock(void)
 
 static void configure_pin(void)
 {
-    // configure PC13 as open-drain output with 2 MHz speed
     uint32_t gpioc_base_address = 0x40011000;
     uint32_t gpioc_crh_address = gpioc_base_address + 0x04;
     uint32_t gpiox_crh_mode13_0 = 1 << 20;
@@ -58,7 +61,6 @@ static void configure_pin(void)
 
 static void toggle_pin(void)
 {
-    // toggle PC13
     uint32_t gpioc_base_address = 0x40011000;
     uint32_t gpioc_odr_address = gpioc_base_address + 0x0c;
     uint32_t gpiox_odr_odr13 = 1 << 13;
