@@ -16,10 +16,8 @@ int main(void)
     enable_port_clock();
     configure_pin();
 
-    // blink loop
     for (;;)
     {
-        // wait loop
         for (uint32_t delay = 500000; delay > 0; delay--)
         {
         }
